@@ -1,0 +1,71 @@
+ 
+<html>
+  <head>
+    <title>Emoção em</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+<h3 class="btn btn-primary title" >
+App de espressao
+<br>
+&#9994; &#9996; &#129305; 
+</h3>
+
+      <br><br>
+
+      <p style="font-size: 22px;">Tire sua selfie para gerar a espressao
+      	<br>
+        <b style="color: rgb(8, 90, 212)">Você está bem?</b>
+        <br>
+        <b style="color: rgb(236, 15, 15)">Você está relaxado?</b>
+        <br>
+        <b style="color: rgb(175, 245, 11)">Você está calmo?</b>
+        <br>
+      </p>
+<div class="col-md-4 col-sm-12 col-xs-12">
+<label >Imagem da webcam</label>
+<div id="camera"></div>
+<br>
+<br>
+<button  onclick="tirarfoto()"class ='btn btn-success'>capturar imagem </button>
+</div>
+<div class="col-md-4 col-sm-12 col-xs-12">
+<label >previsao 1 </label>
+<p class="emotionName" id="resultado1"></p>
+<p class="emoji"id='emoji1'></p>
+
+<label >previsao 2 </label>
+<p class="emotionName" id="resultado2"></p>
+<p class="emoji"id='emoji2'></p>
+
+</div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Foto:</label>
+<div id="result"></div>
+        <br><br>
+<button onclick="checar()"class='btn btn-danger' >prever GESTO</button>
+      </div>
+
+    </center>
+
+  </div>
+
+<script src="j.js"></script>
+
+  </body>
+</html>
+
+ 
